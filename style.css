@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.imagen-logo{
+    width:100px;
+    margin-left: 10px;
+}
+
+.menu{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;/*opcional*/
+    width:400px;
+}
+
+.item-menu{
+    list-style-type:none;
+}
+
+.item-link{
+    text-decoration: none;
+    color:whitesmoke;
+    font-family: sans-serif;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+/*Responsive Designe*/
+ 
+@media(max-width: 768px){
+    .navbar{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+
+/*
+Si el diseño es en una primer instancia para computadoras, lo recomendable es:
+● Desarrollar el sitio para pc.
+● Hacer un @media para cada dispositivo más chico utilizando max-width, así le
+ponemos como límite cuando, como máximo, tenga ese tamaño de pantalla.
+Si el diseño es en una primera instancia para celulares, lo recomendable es:
+● Desarrollar el sitio para celulares.
+● Hacer un @media para cada dispositivo más grande utilizando min-width, así le
+ponemos como límite cuando, como mínimo, tenga ese tamaño de pantalla.
+*/
